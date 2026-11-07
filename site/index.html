@@ -4,29 +4,41 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#0a1730">
-<meta property="og:title" content="Mouslim Yacouba – Développeur web et mobile à Zinder">
-<meta property="og:description" content="Portfolio d’un développeur junior autodidacte qui construit des outils numériques utiles pour le Niger.">
+<meta property="og:title" content="Mouslim Yacouba – Développeur Web &amp; Mobile Junior">
+<meta property="og:description" content="Portfolio de Mouslim Yacouba, développeur Web et Mobile Junior à la recherche d’un stage ou d’un premier emploi.">
 <meta property="og:image" content="assets/portrait.jpg">
 <meta property="og:type" content="website">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-<title>Mouslim Yacouba – Développeur web et mobile à Zinder</title>
-<meta name="description" content="Portfolio de Mouslim Yacouba (Slim), développeur junior autodidacte à Zinder, Niger : applications web et mobiles utiles pour le Niger.">
+<title>Mouslim Yacouba – Développeur Web &amp; Mobile Junior</title>
+<meta name="description" content="Découvrez le portfolio de Mouslim Yacouba, développeur Web et Mobile Junior autodidacte à la recherche d’un stage ou d’un premier emploi.">
+<script src="js/preloader.js" defer></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<div class="preloader" role="status" aria-live="polite">
+  <div class="preloader__content">
+    <span class="preloader__initials" aria-hidden="true">MY</span>
+    <p class="preloader__name">Mouslim Yacouba</p>
+    <p class="preloader__message">Bienvenue sur mon portfolio<br>Découvrez mon parcours, mes projets et mon évolution dans le développement web et mobile.</p>
+    <span class="preloader__track" role="progressbar" aria-label="Progression du chargement" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span class="preloader__progress"></span></span>
+    <p class="preloader__percentage" aria-live="polite">0 %</p>
+  </div>
+</div>
 <header>
   <div class="wrap">
     <nav aria-label="Navigation principale">
-      <a class="logo" href="#accueil">Slim<span>.</span></a>
+      <a class="logo" href="index.html">Slim<span>.</span></a>
       <button class="menu-btn" id="menuBtn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
       <ul id="menu">
-        <li><a href="#projets">Projets</a></li>
-        <li><a href="#competences">Compétences</a></li>
-        <li><a href="#parcours">Parcours</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="about.html">À propos</a></li>
+        <li><a href="projects.html">Projets</a></li>
+        <li><a href="skills.html">Compétences</a></li>
+        <li><a href="education.html">Formations</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -36,14 +48,12 @@
 <section class="hero" id="accueil">
   <div class="wrap">
     <div>
-      <p class="hello">Salam, je suis Mouslim Yacouba, mais on m’appelle Slim.</p>
-      <h1>Je construis des outils numériques utiles pour le Niger.</h1>
-      <p class="lead">Je suis développeur <strong>web et mobile junior</strong>, basé à Zinder. J’apprends en construisant des projets et en consultant la documentation. Je pratique Flutter et React, et j’apprends actuellement <strong>Python et C#</strong>. Mon objectif : créer des outils numériques utiles au Niger et progresser à chaque projet.</p>
+      <p class="hello">Salam, je suis</p>
+      <h1>Mouslim Yacouba</h1>
+      <p class="lead"><strong>Développeur Web &amp; Mobile Junior</strong>, j’apprends en autodidacte en réalisant des projets concrets, comme AtelierPro et le prototype Lomé–Niamey Express. Je souhaite continuer à progresser et contribuer à des projets utiles.</p>
       <div class="cta">
-        <a class="btn main" href="#projets">Voir mes projets</a>
-        <a class="btn alt" href="https://github.com/mouslimyacouba" target="_blank" rel="noopener">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61-.546-1.385-1.335-1.755-1.335-1.755-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          GitHub</a>
+        <a class="btn main" href="projects.html">Découvrir mes projets</a>
+        <a class="btn alt" href="contact.html">Me contacter</a>
       </div>
     </div>
     <div class="portrait">
@@ -54,96 +64,12 @@
     </div>
   </div>
 </section>
-
-<section id="projets" class="alt-bg">
-  <div class="wrap">
-    <h2>Projets</h2>
-    <p class="intro">Voici ce que je construis en ce moment. Chaque projet est à un stade différent, et je l’indique clairement.</p>
-    <div class="projects">
-
-      <article class="proj" id="lne">
-        <h3>LNE Express</h3>
-        <span class="status st-plan">En conception</span>
-        <p>Une plateforme qui met en relation les personnes qui ont une marchandise à envoyer et des transporteurs routiers vérifiés en Afrique de l’Ouest. L’objectif  rendre le transport de marchandises plus simple, plus sûr et plus transparent, avec un suivi du trajet et un paiement sécurisé.</p>
-        <ul class="tech" aria-label="Technologies envisagées"><li>Python</li><li>PostgreSQL</li><li>Flutter</li></ul>
-        <p class="soon">Technologies envisagées pour la première version. Pas encore de version en ligne.</p>
-      </article>
-
-      <article class="proj">
-        <h3>AtelierPro</h3>
-        <span class="status st-done">En production</span>
-        <p>Application mobile pour aider les artisans du Niger à gérer leur atelier : clients, commandes et suivi du travail. Une version Android est disponible ; une vitrine web présente le projet.</p>
-        <ul class="tech" aria-label="Technologies"><li>App mobile : Flutter / Dart</li><li>Vitrine : React / TypeScript / Vite / Tailwind CSS</li></ul>
-        <a class="btn alt" href="https://atelier-pro-showcase.vercel.app/" target="_blank" rel="noopener">Voir la démo</a>
-      </article>
-
-      <article class="proj">
-        <h3>Zinder Digital</h3>
-        <span class="status st-done">Terminé</span>
-        <p>Le site de mon activité de services numériques, qui présente mes offres de création web et de visibilité en ligne. Il est conçu pour être rapide, lisible et facile à utiliser sur téléphone.</p>
-        <ul class="tech" aria-label="Technologies confirmées"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
-        <a class="btn alt" href="https://zinder-digital-27.vercel.app/" target="_blank" rel="noopener" id="zd-link">Voir le site</a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<section id="competences">
-  <div class="wrap">
-    <h2>Compétences</h2>
-    <p class="intro">Les outils que j’utilise vraiment, regroupés par usage.</p>
-    <div class="skills">
-      <div class="skill">
-        <h3>Développement</h3>
-        <ul><li class="top">Python</li><li class="learning">C#</li><li>Flutter / Dart</li><li>React</li><li>TypeScript</li><li>Tailwind CSS</li><li>HTML / CSS</li></ul>
-        <p class="note">Python est ma priorité : c’est le langage que j’apprends en ce moment, en plus de Flutter. Je commence ensuite le C#, et je consolide le tout en réalisant des projets pratiques.</p>
-      </div>
-      <div class="skill">
-        <h3>Backend et bases de données</h3>
-        <ul><li>Supabase</li><li>Firebase</li><li>PostgreSQL</li><li>Authentification</li></ul>
-      </div>
-      <div class="skill">
-        <h3>Développement agentique et outils</h3>
-        <ul><li>Claude Code</li><li>Codex</li><li>Antigravity</li><li>Git / GitHub</li><li>VS Code</li></ul>
-        <p class="note">Je construis mes projets avec des agents IA modernes, que je relis et corrige moi-même.</p>
-      </div>
-    </div>
-    <p class="learn">J’apprends aussi les bases des réseaux et de la cybersécurité (TryHackMe, PortSwigger Web Security Academy, Cisco NetAcad) pour construire des applications plus sûres.</p>
-  </div>
-</section>
-
-<section id="parcours" class="alt-bg">
-  <div class="wrap about">
-    <div>
-      <h2>Mon parcours</h2>
-      <p>J’ai commencé par des vidéos, des tutoriels et beaucoup d’essais, puis j’ai suivi des cours en ligne comme ceux d’OpenClassrooms freecodecamp et W3Schools.</p>
-      <p>Mon apprentissage passe par la pratique : je choisis un vrai problème, je construis une première version, puis je l’améliore.</p>
-    </div>
-    <div>
-      <h2>Ce que je veux faire</h2>
-      <p>Créer des solutions numériques adaptées à la réalité du Niger et de l’Afrique de l’Ouest : applications légères, faciles à utiliser et utiles au quotidien.</p>
-      <p>Je cherche des occasions de progresser, des collaborations et des retours honnêtes sur mon travail.</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="wrap">
-    <h2>Discutons</h2>
-    <p class="intro">Une question, une idée de projet ou un retour sur mon travail ? Écris-moi directement sur WhatsApp au +227 82 19 99 29 ou regarde mon profil GitHub.</p>
-    <div class="cta">
-      <a class="btn warm" href="https://wa.me/22782199929" target="_blank" rel="noopener">Me contacter sur WhatsApp</a>
-      <a class="btn alt" href="https://github.com/mouslimyacouba" target="_blank" rel="noopener">Voir mon GitHub</a>
-    </div>
-  </div>
-</section>
 </main>
 
 <footer>
   <div class="wrap">
     <span>© <span id="y">2026</span> Mouslim Yacouba · Zinder, Niger</span>
-    <span><a href="https://github.com/mouslimyacouba" target="_blank" rel="noopener">GitHub</a><a href="https://wa.me/22782199929" target="_blank" rel="noopener">WhatsApp</a><a href="#accueil">Haut de page</a></span>
+    <span><a href="https://www.linkedin.com/in/yacouba-mouslim-173426330/" target="_blank" rel="noopener">LinkedIn</a><a href="https://github.com/mouslimyacouba" target="_blank" rel="noopener">GitHub</a><a href="https://wa.me/22782199929" target="_blank" rel="noopener">WhatsApp</a><a href="index.html#accueil">Accueil</a></span>
   </div>
 </footer>
 <script src="js/main.js"></script>
