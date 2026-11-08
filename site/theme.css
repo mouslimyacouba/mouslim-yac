@@ -1,16 +1,16 @@
 /* Thème sombre (par défaut) : fond bleu moins foncé */
 :root {
   color-scheme: dark;
-  --t-bg: #1a3366;
-  --t-surface: #22427f;
-  --t-border: #3a5ea3;
-  --t-text: #eef3ff;
-  --t-muted: #b4c4e6;
-  --t-blue: #6ea2ff;
-  --t-orange: #ff9a52;
-  --t-chip-bg: rgba(110, 162, 255, 0.2);
-  --t-chip-text: #dbe7ff;
-  --t-on-accent: #0f2044;
+  --t-bg: #0a1730;
+  --t-surface: #0f2044;
+  --t-border: #23396b;
+  --t-text: #e8eefc;
+  --t-muted: #a3b3d6;
+  --t-blue: #4d8dff;
+  --t-orange: #ff8a3d;
+  --t-chip-bg: rgba(79, 140, 255, 0.22);
+  --t-chip-text: #fff;
+  --t-on-accent: #0a1730;
 }
 
 /* Thème clair */

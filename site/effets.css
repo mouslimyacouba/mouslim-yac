@@ -5,6 +5,11 @@
   --fx-texte: var(--t-text);
   --fx-muet: var(--t-muted);
 }
+:root[data-theme="dark"] {
+  --fx-bleu: #4f8cff;
+  --fx-bord: #24427a;
+  --fx-muet: #9fb2d9;
+}
 
 /* Barre de lecture */
 .fx-lecture {
@@ -72,6 +77,9 @@ nav a.fx-actif {
   opacity: 0;
   transition: opacity 0.2s;
   pointer-events: none;
+}
+:root[data-theme="dark"] .fx-halo::before {
+  background: radial-gradient(160px circle at var(--fx-x, 50%) var(--fx-y, 50%), rgba(79, 140, 255, 0.28), transparent 70%);
 }
 .fx-halo:hover::before { opacity: 1; }
 

@@ -39,7 +39,7 @@
       b.setAttribute("title", versClair ? "Thème clair" : "Thème sombre");
     });
     var meta = document.querySelector('meta[name="theme-color"]');
-    if (meta) meta.setAttribute("content", theme === "light" ? "#f5f8ff" : "#1a3366");
+    if (meta) meta.setAttribute("content", theme === "light" ? "#f5f8ff" : "#0a1730");
   }
 
   function appliquer(theme, animer) {
