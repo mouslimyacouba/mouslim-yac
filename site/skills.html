@@ -15,6 +15,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="effets.css">
 </head>
 <body>
 <header>
@@ -40,7 +41,7 @@
     <h1 class="page-title">Compétences</h1>
     <p class="intro">Technologies et outils utilisés dans mes projets ou actuellement en apprentissage.</p>
     <div class="skills">
-      <div class="skill">
+      <div class="skill" data-halo>
         <h2>Technologies utilisées dans mes projets</h2>
         <ul>
           <li>Flutter</li><li>Dart</li><li>Firebase</li>
@@ -48,17 +49,17 @@
         </ul>
         <p class="note">Flutter, Dart et Firebase pour AtelierPro. HTML, CSS et JavaScript sont également utilisés dans ce portfolio et le site de Zinder Digital.</p>
       </div>
-      <div class="skill">
+      <div class="skill" data-halo>
         <h2>Autres technologies utilisées</h2>
         <ul><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li></ul>
         <p class="note">Technologies que j'ai également utilisées dans le cadre de mes expérimentations et projets personnels, en dehors des projets présentés ci-dessus.</p>
       </div>
-      <div class="skill">
+      <div class="skill" data-halo>
         <h2>Technologies en apprentissage</h2>
         <ul><li class="learning">Python</li><li class="learning">C#</li></ul>
         <p class="note">J’approfondis aussi les fondamentaux des réseaux et de la cybersécurité avec des ressources comme TryHackMe, PortSwigger Web Security Academy et Cisco NetAcad.</p>
       </div>
-      <div class="skill">
+      <div class="skill" data-halo>
         <h2>Outils et assistants IA</h2>
         <ul><li>Git / GitHub</li><li>VS Code</li><li>Claude Code</li><li>Codex</li><li>Antigravity</li><li>GitHub Copilot</li></ul>
         <p class="note">J’utilise des assistants IA dans mon travail et relis le code produit dans le cadre de mes projets.</p>
@@ -75,5 +76,6 @@
   </div>
 </footer>
 <script src="js/main.js"></script>
+<script src="effets.js" defer></script>
 </body>
 </html>
