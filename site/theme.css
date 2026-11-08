@@ -1,0 +1,81 @@
+/* Thème sombre (par défaut) : fond bleu moins foncé */
+:root {
+  color-scheme: dark;
+  --t-bg: #1a3366;
+  --t-surface: #22427f;
+  --t-border: #3a5ea3;
+  --t-text: #eef3ff;
+  --t-muted: #b4c4e6;
+  --t-blue: #6ea2ff;
+  --t-orange: #ff9a52;
+  --t-chip-bg: rgba(110, 162, 255, 0.2);
+  --t-chip-text: #dbe7ff;
+  --t-on-accent: #0f2044;
+}
+
+/* Thème clair */
+:root[data-theme="light"] {
+  color-scheme: light;
+  --t-bg: #f5f8ff;
+  --t-surface: #ffffff;
+  --t-border: #d3dff5;
+  --t-text: #0f2044;
+  --t-muted: #4a5f8a;
+  --t-blue: #1d4ed8;
+  --t-orange: #c2410c;
+  --t-chip-bg: rgba(29, 78, 216, 0.1);
+  --t-chip-text: #1e3a8a;
+  --t-on-accent: #ffffff;
+}
+
+/* Sans JavaScript : suit le réglage de l'appareil */
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme]) {
+    color-scheme: light;
+    --t-bg: #f5f8ff;
+    --t-surface: #ffffff;
+    --t-border: #d3dff5;
+    --t-text: #0f2044;
+    --t-muted: #4a5f8a;
+    --t-blue: #1d4ed8;
+    --t-orange: #c2410c;
+    --t-chip-bg: rgba(29, 78, 216, 0.1);
+    --t-chip-text: #1e3a8a;
+    --t-on-accent: #ffffff;
+  }
+}
+
+/* Transition douce uniquement pendant un changement de thème */
+:root.theme-anim,
+:root.theme-anim *,
+:root.theme-anim *::before,
+:root.theme-anim *::after {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, fill 0.3s ease !important;
+}
+
+/* Bouton de bascule */
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 1px solid var(--t-border);
+  border-radius: 999px;
+  background: var(--t-surface);
+  color: var(--t-text);
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+.theme-toggle:hover { border-color: var(--t-blue); }
+.theme-toggle:focus-visible { outline: 2px solid var(--t-blue); outline-offset: 3px; }
+.theme-toggle svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.theme-toggle .icone-soleil { display: block; }
+.theme-toggle .icone-lune { display: none; }
+:root[data-theme="light"] .theme-toggle .icone-soleil { display: none; }
+:root[data-theme="light"] .theme-toggle .icone-lune { display: block; }
+
+@media (prefers-reduced-motion: reduce) {
+  :root.theme-anim, :root.theme-anim *, :root.theme-anim *::before, :root.theme-anim *::after { transition: none !important; }
+}

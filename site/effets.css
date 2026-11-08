@@ -1,9 +1,9 @@
 :root {
-  --fx-or: #ff8a3d;
-  --fx-bleu: #4f8cff;
-  --fx-bord: #24427a;
-  --fx-texte: #e8eefc;
-  --fx-muet: #9fb2d9;
+  --fx-or: var(--t-orange);
+  --fx-bleu: var(--t-blue);
+  --fx-bord: var(--t-border);
+  --fx-texte: var(--t-text);
+  --fx-muet: var(--t-muted);
 }
 
 /* Barre de lecture */
@@ -53,8 +53,8 @@ nav a.fx-actif {
 .fx-filtre:focus-visible { outline: 2px solid var(--fx-bleu); outline-offset: 3px; }
 .fx-filtre[aria-pressed="true"] {
   border-color: var(--fx-bleu);
-  background: rgba(79, 140, 255, 0.22);
-  color: #fff;
+  background: var(--t-chip-bg);
+  color: var(--t-chip-text);
 }
 [data-categorie] { transition: opacity 0.25s ease, transform 0.25s ease; }
 [data-categorie].fx-sortie { opacity: 0; transform: scale(0.94); }
@@ -68,7 +68,7 @@ nav a.fx-actif {
   inset: 0;
   z-index: -1;
   border-radius: inherit;
-  background: radial-gradient(160px circle at var(--fx-x, 50%) var(--fx-y, 50%), rgba(79, 140, 255, 0.28), transparent 70%);
+  background: radial-gradient(160px circle at var(--fx-x, 50%) var(--fx-y, 50%), var(--t-chip-bg), transparent 70%);
   opacity: 0;
   transition: opacity 0.2s;
   pointer-events: none;

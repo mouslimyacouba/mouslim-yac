@@ -11,6 +11,19 @@
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <title>Projets — Mouslim Yacouba, Développeur Web &amp; Mobile Junior</title>
 <meta name="description" content="Découvrez AtelierPro, Zinder Digital et le prototype Lomé–Niamey Express de Mouslim Yacouba.">
+<meta name="color-scheme" content="dark light">
+<script>
+  (function () {
+    try {
+      var t = localStorage.getItem("theme");
+      if (t !== "light" && t !== "dark") {
+        t = window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+      }
+      document.documentElement.setAttribute("data-theme", t);
+    } catch (e) {}
+  })();
+</script>
+<link rel="stylesheet" href="theme.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
@@ -31,6 +44,15 @@
         <li><a href="education.html">Formations</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-label="Passer au thème clair">
+        <svg class="icone-soleil" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="4"></circle>
+          <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"></path>
+        </svg>
+        <svg class="icone-lune" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path>
+        </svg>
+      </button>
     </nav>
   </div>
 </header>
@@ -78,5 +100,6 @@
 </footer>
 <script src="js/main.js"></script>
 <script src="effets.js" defer></script>
+<script src="theme.js" defer></script>
 </body>
 </html>
